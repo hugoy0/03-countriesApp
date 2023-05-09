@@ -1,4 +1,6 @@
 <input 
+    #txtInput
     type="text" 
     class="form-control" 
-    [placeholder]="placeholder">
+    [placeholder]="placeholder" 
+    (keyup.enter)="emitInput(txtInput.value)" >
