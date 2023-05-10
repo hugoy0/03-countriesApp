@@ -11,8 +11,7 @@ export class SearchBoxComponent {
   @Input()
   public placeholder: string = 'Search...';
 
-  @Output()
-  onValue = new EventEmitter<string>();
+  @Output() onValue = new EventEmitter<string>();
 
   emitInput(text:string):void {
     this.onValue.emit(text);

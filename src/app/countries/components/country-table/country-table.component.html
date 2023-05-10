@@ -1,4 +1,4 @@
-<div *ngIf="countries.length === 0; else table" class="alert alert-warning text-center">
+<div *ngIf="countriesFromTable.length === 0; else table" class="alert alert-warning text-center">
     <p>Sorry, nothing to show!</p>
 </div>
 
@@ -14,7 +14,7 @@
                 <th>Population</th>
                 <th></th>
             </tr>
-            <tr *ngFor="let country of countries;index as i">
+            <tr *ngFor="let country of countriesFromTable;index as i">
                 <th>
                     {{i+1}}
                 </th>
